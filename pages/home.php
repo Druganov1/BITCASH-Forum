@@ -46,10 +46,18 @@ if (isset($_SESSION['username']) && $_SESSION['username'] !== "") {
 
         <?php
         include "../functions/db.php";
-        echo '<button type="button" style="margin-bottom: 2vh;" class="btn btn-success " data-toggle="modal" data-target="#createPostModal">
+        echo '<button type="button" style="margin-bottom: 2vh;" class="btn btn-success " data-toggle="modal" data-target="#createPostModal"';
+        $stmt = $pdo->query("SELECT * FROM category");
+        if ($stmt->rowCount() == 0) {
+            echo ' disabled';
+        }
+        echo '>
         Create New Post
-    </button>
-    ';
+    </button>';
+    $stmt = $pdo->query("SELECT * FROM category");
+    if ($stmt->rowCount() == 0) {
+        echo ' disabled';
+    }
 
         $categories = [];
 
