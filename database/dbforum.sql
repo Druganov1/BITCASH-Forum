@@ -16,7 +16,7 @@
 
 
 -- Dumping database structure for dbforum
-CREATE DATABASE IF NOT EXISTS `dbforum` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE IF NOT EXISTS `dbforum` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `dbforum`;
 
 -- Dumping structure for table dbforum.category
